@@ -7,6 +7,11 @@
 
     <link rel="stylesheet" href="css/style.css" />
 
+    <style>
+        #remotes video {
+            width: 320px;
+        }
+    </style>
 </head>
 
 <body>
@@ -15,11 +20,17 @@
     <video id="localVideo" autoplay muted playsinline ></video>
 </div>
 
+<div id="remotes">
+    <span
+            style="position: absolute; margin-left: 5px; margin-top: 5px"
+            class="badge badge-primary"
+    >Remotes</span
+    >
+</div>
+
 <br />
 <div id="connections"></div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.0/socket.io.js"></script>
-<script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
 <script src="js/main.js"></script>
 
 </body>
